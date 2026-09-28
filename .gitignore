@@ -1,0 +1,57 @@
+# Secrets and local configuration (never commit)
+.env
+.env.*
+!.env.example
+.clasp.json
+.clasprc.json
+credentials.json
+token.json
+service-account*.json
+oauth-client*.json
+*.pem
+*.key
+*.p12
+
+# User-specified local Apps Script and data-source files
+/api/rdfdatasheet/
+/Code.gs
+/appsscript.json
+/databasesetup.gs
+/config.js
+/docs/
+/*.md
+
+# Apps Script local-only settings and deployment artifacts
+appsscript.local.json
+.claspignore.local
+
+# Editor, OS and dependency artifacts
+.vscode/
+.idea/
+node_modules/
+dist/
+coverage/
+.cache/
+*.log
+Thumbs.db
+.DS_Store
+
+# Legacy working notes at repository root; requirements remain readable locally
+/*.txt
+
+# Local exports/evidence; source data must live in private Google Drive, not Git
+exports/
+evidence/
+tmp/
+*.pdf
+*.docx
+*.xlsx
+*.zip
+
+# Generated Phase 0.5 artifacts (keep the reproducible spike source, not its exports)
+/spike/output/
+/spike/node_modules/
+
+# Keep the complete Apps Script source and test suite local-only.
+/src/
+/tests/
