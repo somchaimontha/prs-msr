@@ -1,0 +1,25 @@
+# Keep development-only files out of Apps Script deployments.
+**/.git/**
+**/.vscode/**
+**/.idea/**
+**/node_modules/**
+**/tests/**
+**/docs/**
+**/*.md
+**/*.txt
+**/.env*
+/.clasp.json
+**/.clasp.json
+/README.md
+/*.md
+/*.txt
+**/credentials.json
+**/token.json
+**/service-account*.json
+**/oauth-client*.json
+**/*.pem
+**/*.key
+**/*.p12
+**/exports/**
+**/evidence/**
+**/tmp/**
